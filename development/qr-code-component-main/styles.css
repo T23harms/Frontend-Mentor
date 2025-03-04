@@ -1,0 +1,44 @@
+
+
+  /* Standard-Styling für Mobile-First */
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Fügt etwas Platz um die Karte hinzu */
+}
+
+.card {
+    background: white;
+    max-width: 320px;  /* Etwas größer für größere Screens */
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 450px;
+    height: auto; /* Automatische Höhe für bessere Skalierung */
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 400px;
+        padding: 25px;
+    }
+
+    .card h1 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+}
+
+  
+  
