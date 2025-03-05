@@ -1,0 +1,82 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: hsl(0, 0%, 12%);
+    max-width: 330px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    max-height: 540px;
+    height: 90%;
+}
+
+.card img {
+    height: auto;
+    max-width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 3px;
+}
+
+.card h1 {
+    font-size: x-large;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1px;
+}
+
+.land {
+    font-size: small;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.skills {
+    font-size: small;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.web {
+    font-size: small;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.web p {
+    background-color: hsl(0, 0%, 20%);
+    font-size: small;
+    font-weight: 600;
+    padding: 12px 1px;
+    margin: 5px auto;
+    width: 80%;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.web p:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
+}
+
+
