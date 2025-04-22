@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+--red: hsl(4, 100%, 67%);
+--Blue800: hsl(234, 29%, 20%);
+--Blue700: hsl(235, 18%, 26%);
+--Grey: hsl(0, 0%,58%);
+--White: hsl(0, 0%, 100%);
+}
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--Blue700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sign-up-picture {
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .sign-up-picture img {
+    width: 100%;
+    height:100%;
+    border-radius: 0 0 10px 10px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .details {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+  }
+
+  .update {
+    color: var(--Blue800);
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .join {
+    line-height: 1.5;
+    color: var(--Blue800);
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 1.5;
+  }
+
+  .icon-list {
+    width: 20px;
+  }
+
+  .list-txt {
+    color: var(--Blue800);
+    font-weight: 400;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+  }
+  
+  .email {
+    color: var(--Blue800);
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .email-box {
+    color: var(--Grey);
+    border-color: var(--Grey);
+    border-radius: 5px;
+    border-width: 1px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .subscription-btn {
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Blue800);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: backgorund 0.5s ease-in-out, box-shadow 0.5 ease-in-out;
+  }
+
+  .subscription-btn:hover {
+    background: linear-gradient(to right, red, orange);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.8);
+  }
+
+
+
+  #success-message {
+    padding: 30px 20px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .success-pic {
+    width: 50px;
+    margin-top: 100px;
+  }
+
+  .thanks-txt {
+    color: var(--Blue800);
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .confirmation-txt {
+    line-height: 1.5;
+    color: var(--Blue800);
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 200px;
+  }
+
+  .dismiss-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Blue800);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background 0.5s ease-in-out, box-shadow 0.5 ease-in-out;
+  }
+
+  .dismiss-btn:hover {
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, red, orange);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.8);
+  }
+
+  @media (min-width: 850px) {
+    body {
+      height: 100vh;
+    }
+    
+    .card {
+        width: 800px;
+        height: 550px;
+        border-radius: 20px;
+        padding: 0;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .sign-up-picture {
+       position: absolute;
+       right: 15px;
+       top: 15px;
+       bottom: 15px;
+       height: auto;
+       width: 45%;
+       
+      }
+
+      .sign-up-picture img {
+        border-radius: 15px;
+      }
+    
+      .details {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        bottom: 30px;
+        width: 45%;
+      }
+
+      .card.success {
+        width: 400px;
+       height: 450px;
+       transition: all 0.5s ease-in-out;
+      }
+
+      #success-message {
+        padding: 40px;
+      }
+
+      .success-pic {
+        margin-top: 0;
+      }
+
+      .confirmation-txt {
+        margin-bottom: 20px;
+      }
+  }

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 50px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: stretch;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .details {
+    padding: 30px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 60%;
+  }
+
+  .furniture {
+    line-height: 1.5;
+    color: hsl(217, 19%, 35%);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .ambiance {
+    line-height: 1.5;
+    color: hsl(214, 17%, 51%);
+    font-weight: 400;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  }
+
+  .michelle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .avatar {
+    width: 35px;
+    border-radius: 50%;
+  }
+
+.person {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: hsl(217, 19%, 35%);
+    font-weight: 400;
+}
+
+.date {
+    color: hsl(212, 23%, 69%);
+    font-weight: 400;
+}
+
+.share {
+    color: hsl(212, 23%, 69%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.share-container {
+    display: flex;
+    align-items: center;
+}
+
+.share-btn {
+    background: hsl(210, 46%, 95%);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 2;
+}
+
+.share-btn.active {
+    background: hsl(214, 17%, 51%);
+}
+
+.share-btn.active .share-icon {
+    filter: brightness(0) invert(1);
+}
+
+.share-box {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: hsl(217, 19%, 35%);
+    padding: 20px 12px 20px 12px;
+    border-radius: 0 0 10px 10px;
+    gap: 15px;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: flex-start;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.share-box img {
+    width: 20px;
+    height: 20px;
+}
+
+.share-box.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (min-width: 700px) { 
+    .card {
+      flex-direction: row;
+      width: 650px;
+      max-height: 300px;
+      overflow: visible;
+    }
+
+    .product-img {
+      width: 40%;
+      height: 100%;
+    }
+
+    .product-img img {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .details {
+      width: 60%;
+    }
+
+    .furniture {
+      margin-bottom: 20px;
+    }
+
+    .ambiance {
+      margin-bottom: 20px;
+    }
+
+    .share-box {
+      display: flex;
+      position: absolute;
+      bottom: 90px; 
+      left: 93%;
+      transform: translateX(-50%);
+      background: hsl(217, 19%, 35%);
+      padding: 10px 15px;
+      border-radius: 10px;
+      gap: 15px;
+      width: 250px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1;
+  }
+  
+  .share-box::after {
+      content: "";
+      position: absolute;
+      bottom: -10px; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid hsl(217, 19%, 35%);
+  }
+  
+  .share-box img {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .share-box.active {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+  }
+  
+}

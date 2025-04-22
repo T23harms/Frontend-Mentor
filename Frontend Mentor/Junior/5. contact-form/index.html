@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <main class="card">
+    <h1>Contact Us</h1>
+
+    <div class="name">
+      <div class="first">
+        <label for="first-name">First Name *</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <span class="required" style="display: none;">This field is required</span>
+      </div>
+      <div class="last">
+        <label for="last-name">Last Name *</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <span class="required" style="display: none;">This field is required</span>
+      </div>
+    </div>
+
+    <div class="email-field">
+      <label class="email-adress" for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+      <span class="required-email">Please enter a valid email address</span>
+      <span class="required" style="display: none;">This field is required</span>
+    </div>
+
+    <div class="query-field">
+      <label>Query Type *</label>
+      <div class="query-buttons">
+        <label>
+            <input type="radio" name="query" value="general">
+            <span class="radio-icon"></span> General Enquiry
+        </label>
+        <label>
+            <input type="radio" name="query" value="support">
+            <span class="radio-icon"></span> Support Request
+        </label>
+      </div>
+      <span class="required-query" style="display: none;">Please select a query type</span>
+    </div>
+
+    <div class="message-field">
+      <label class="message-text" for="message">Message *</label>
+      <textarea id="message" name="message" required></textarea>
+      <span class="required" style="display: none;">This field is required</span>
+    </div>
+
+    <div class="checkbox-container">
+      <div class="checkbox">
+        <input id="consent" type="checkbox"> 
+        <label for="consent"></label>
+        <button>I consent to being contacted by the team *</button>
+      </div>
+      <span class="required-consent" style="display: none;">To submit this form, please consent to being contacted</span>
+    </div>
+
+    <button id="submit">Submit</button>
+  </main>
+
+    <div id="success-message">
+      <div>
+        <img class="success-icon" src="images/icon-success-check.svg" alt="icon-success-check">  
+        <span class="sent">Message Sent!</span>
+      </div>
+      <span class="complete">Thanks for completing the form. We'll be in touch soon!</span>
+    </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

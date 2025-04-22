@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --grey500: hsl(217, 12%, 63%);
+    --grey900: hsl(213, 19%, 18%);
+    --grey950: hsl(216, 12%, 8%);
+  }
+
+  body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Rating Card */
+  #rating-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey950);
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 15px;
+    width: 370px;
+    height: 370px;
+  }
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey900);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+  .icon-star {
+    width: 15px;
+    height: auto;
+  }
+
+  #rating-card h1 {
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+   p {
+    color: var(--grey500);
+    font-weight: 200;
+    line-height: 1.5;
+  }
+
+  #rate-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #rate-buttons button {
+    border: none;
+    background-color: var(--grey900);
+    color: var(--grey500);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-weight: 400;
+    transition: background 0.3s ease-in-out;
+  }
+
+  #rate-buttons button:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--grey900);
+  }
+
+  #rate-buttons button.active {
+    background-color: var(--white);
+    color: var(--grey900);
+  }
+
+  #submit {
+    color: var(--grey900);
+    background-color: var(--orange);
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  #submit:hover {
+    background-color: var(--white);
+    cursor: pointer;
+  }
+
+/* Thank you Card */
+  #thank-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey950);
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 15px;
+    width: 370px;
+    height: 370px;
+  }
+
+  #thank-card img {
+    width: 150px;
+    height: auto;
+  }
+
+  #thank-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey900);
+    width: 200px;
+    height: 30px;
+    color: var(--orange);
+    border-radius: 25px;
+    font-weight: 200;
+    margin-top: 30px;
+  }
+
+  #thank-card h1 {
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  #thank-card p {
+    text-align: center;
+  }
+
+  #selected-feedback {
+    padding: 0 5px;
+  }
+
+  @media (max-width: 365px) {
+   
+    #rating-card {
+        width: 100%;
+        height: 370px;
+      }
+   
+      #thank-card {
+        width: 100%;
+        height: 370px;
+      }
+  }

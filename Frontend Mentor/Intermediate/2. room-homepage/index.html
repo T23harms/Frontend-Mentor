@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+  <div class="overlay"></div>
+  <section id="head">
+    <img class="menu-toggle" id="close-icon" src="images/icon-close.svg" alt="close-icon" style="display: none;">
+    <img class="menu-toggle" id="menu-icon" src="images/icon-hamburger.svg" alt="menu-icon">
+    <img id="logo" src="images/logo.svg" alt="logo">
+    <div id="navigation">
+      <p>Home</p>
+      <p>Shop</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+  </section>
+
+  <section id="sliders">
+    <div id="slide-container">  
+      <picture>
+        <source srcset="images/desktop-image-hero-1.jpg" media="(min-width: 1024px)">
+        <img class="slide-img active" src="images/mobile-image-hero-1.jpg" alt="first-img">
+      </picture>
+      <picture>
+        <source srcset="images/desktop-image-hero-2.jpg" media="(min-width: 1024px)">
+        <img class="slide-img" src="images/mobile-image-hero-2.jpg" alt="second-img">
+      </picture>
+      <picture>
+        <source srcset="images/desktop-image-hero-3.jpg" media="(min-width: 1024px)">
+        <img class="slide-img" src="images/mobile-image-hero-3.jpg" alt="third-img">
+      </picture>
+
+        <div id="angles">
+          <div id="left-box">
+            <img id="left-angle" src="images/icon-angle-left.svg" alt="left-angle">
+          </div>
+          <div id="right-box">
+            <img id="right-angle" src="images/icon-angle-right.svg" alt="right-angle">
+          </div>
+        </div>
+    </div>
+
+    <div id="first-slider" class="slide-text active">
+      <h1>Discover innovative ways to decorate</h1>
+
+      <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+      Our experts combine form and function in bringing your vision to life. Create a room in your 
+      own style with our collection and make your property a reflection of you and what you love.</p>
+
+      <div class="shop">
+        <span>Shop now</span> <img src="images/icon-arrow.svg" alt="arrow">
+      </div>
+    </div>
+
+    <div id="second-slider" class="slide-text">
+      <h1>We are available all across the globe</h1>
+
+      <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+      Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+      store locator. Any questions? Don't hesitate to contact us today.</p>
+
+      <div class="shop">
+        <span>Shop now</span> <img src="images/icon-arrow.svg" alt="arrow">
+      </div>
+    </div>
+
+    <div id="third-slider" class="slide-text">
+      <h1>Manufactured with the best materials</h1>
+
+      <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+      to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+      experience in this industry, we understand what customers want for their home and office.</p>
+
+      <div class="shop">
+        <span>Shop now</span> <img src="images/icon-arrow.svg" alt="arrow">
+      </div>
+    </div>
+  </section>
+
+  <section id="bottom">
+    <img id="dark-picture" src="images/image-about-dark.jpg" alt="dark-picture">
+
+    <div id="bottom-text">
+      <h2>About our furniture</h2>
+
+      <p>Our multifunctional collection blends design and function to suit your individual taste.
+      Make each room unique, or pick a cohesive theme that best express your interests and what
+      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+      or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+
+    <img id="light-picure" src="images/image-about-light.jpg" alt="light-picure">
+  </section>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --selfCare: hsl(43, 84%, 65%);
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --darkBlue: hsl(235, 46%, 20%);
+    --lightBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 210px);
+    grid-template-rows: repeat(2, 200px);
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+    place-items: center;
+    width: max-content;
+    min-width: 50%;
+    margin: 0 auto;
+  }
+
+/* Jeremys Card */
+  .jeremys-report {
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    grid-row: 1/ span 2;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jeremys-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--blue);
+    width: auto;
+    height: 70%;
+    border-radius: 10px;
+    padding: 25px 25px;
+  }
+
+  .jeremys-profile img {
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 35px;
+  }
+
+  small {
+    font-size: 12px;
+    color: var(--paleBlue);
+    font-weight: 300;
+  }
+
+  .jeremys-profile h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px 25px;
+    margin: auto 0;
+  }
+
+  .time button {
+    font-weight: 300;
+    color: var(--paleBlue);
+    background: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+  .time button:hover {
+    color: white;
+    
+    cursor: pointer;
+  }
+
+  .time button.active {
+    color: white;
+  }
+
+/* Work Card */
+  .work {
+    background-color: var(--work);
+    border-radius: 10px;
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work .icon-work {
+    position: absolute;
+    transform: translateY(-145px);
+    right: 15px;
+    width: 65px;
+    height: auto;
+  }
+
+  /* Play Card */
+  .play {
+    background-color: var(--play);
+    border-radius: 10px;
+    grid-row: 1;
+    grid-column: 3;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .play .icon-play {
+    position: absolute;
+    transform: translateY(-140px);
+    right: 15px;
+    width: 65px;
+    height: auto;
+  }
+
+ /* Study Card */
+ .study {
+  background-color: var(--study);
+  border-radius: 10px;
+  grid-row: 1;
+  grid-column: 4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.study .icon-study {
+  position: absolute;
+  transform: translateY(-145px);
+  right: 15px;
+  width: 65px;
+  height: auto;
+}
+
+/* Exercise Card */
+.exercise {
+  background-color: var(--exercise);
+  border-radius: 10px;
+  grid-row: 2;
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.exercise .icon-exercise {
+  position: absolute;
+  transform: translateY(-153px);
+  right: 15px;
+  width: 70px;
+  height: auto;
+}
+
+/* Social Card */
+.social {
+  background-color: var(--social);
+  border-radius: 10px;
+  grid-row: 2;
+  grid-column: 3;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.social .icon-social {
+  position: absolute;
+  transform: translateY(-125px);
+  right: 15px;
+  width: 65px;
+  height: auto;
+}
+
+/* Self Care Card */
+.self-care {
+  background-color: var(--selfCare);
+  border-radius: 10px;
+  grid-row: 2;
+  grid-column: 4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.self-care .icon-self-care {
+  position: absolute;
+  transform: translateY(-150px);
+  right: 15px;
+  width: 65px;
+  height: auto;
+}
+
+  .activiti-card {
+    background-color: var(--darkBlue);
+    width: 100%;
+    height: 80%;
+    padding: 25px;
+    border-radius: 10px;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+  }
+
+  .activiti-card:hover:not(:has(.activiti-head img:hover)) {
+    background-color: var(--lightBlue);
+    cursor: pointer;
+  }
+
+  .activiti-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .activiti-head p {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .activiti-head img {
+    transition: filter 0.3s ease;
+  }
+
+  .activiti-head img:hover {
+    filter:brightness(1.2);
+    cursor: pointer;
+  }
+
+  .activiti-card h2 {
+    font-size: 45px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+    padding: 60px 15px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+    place-items: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+
+/* Jeremys Card */
+.jeremys-report {
+  height: 180px;
+}
+
+.jeremys-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  gap: 20px;
+}
+
+.jeremys-profile img {
+  margin-bottom: 0;
+}
+
+.mobile-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.jeremys-profile h1 {
+  font-size: 20px;
+  
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 25px;
+  margin: auto 0;
+}
+
+/* Work Card */
+.work {
+  height: 140px;
+}
+
+.work .icon-work {
+  transform: translateY(-85px);
+}
+
+/* Play Card */
+.play {
+  height: 150px;
+}
+
+.play .icon-play {
+  transform: translateY(-90px);
+}
+
+/* Study Card */
+.study {
+  height: 150px;
+}
+
+.study .icon-study {
+  transform: translateY(-95px);
+}
+
+/* Exercise Card */
+.exercise {
+  height: 150px;
+}
+
+.exercise .icon-exercise {
+  transform: translateY(-105px);
+}
+
+/* Social Card */
+.social {
+  height: 150px;
+}
+
+.social .icon-social {
+  transform: translateY(-75px);
+}
+
+/* Self Care Card */
+.self-care {
+  height: 150px;
+}
+
+.self-care .icon-self-care {
+  transform: translateY(-100px);
+}
+
+.activiti-card {
+  height: 80%;
+}
+
+.activiti-head {
+  margin-bottom: 5px;
+}
+
+.daily, .weekly, .monthly {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;            
+}
+
+.activiti-card h2 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+}

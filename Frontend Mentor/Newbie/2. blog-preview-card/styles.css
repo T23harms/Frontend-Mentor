@@ -1,0 +1,83 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border: 1px solid black;
+    max-width: 300px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+    margin: 20;
+    max-height: 425px;
+    height: 90%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h1 {
+    background-color: hsl(47, 88%, 63%);
+    font-size: small;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    padding: 5px 12px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.date {
+    font-size: small;
+    font-weight: 500;
+    color: hsl(0, 0%, 7%);
+}
+
+.title {
+    font-size: larger;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+    line-height: 1.5em;
+}
+
+.author {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.avatar { 
+    height: auto;
+    max-width: 30px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.name {
+    font-size: small; 
+    font-weight: 800;
+}

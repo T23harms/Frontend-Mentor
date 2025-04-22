@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    width: 340px;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+    #equilibrium {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(178, 100%, 50%, 0.5); /* Cyan mit Transparenz */
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+
+    #overlay img#eye {
+        width: 50px;
+        height: auto;
+    }
+
+    #picture:hover #overlay {
+        opacity: 1;
+    }
+
+#headline {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+}    
+
+#headline:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+#text {
+    color: var(--soft-blue);
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+
+#ethereum-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    #ethereum {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+        #ethereum-img {
+            width: 10px;
+            height: 20px;
+        }
+
+        #ethereum span {
+            font-weight: 400;
+            color: var(--cyan);
+        }
+
+    #time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }    
+
+        #clock {
+            width: 20px;
+            height: 20px;
+        }
+
+        #time span {
+            color: var(--soft-blue);
+        }
+
+#divider {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: var(--blue);
+    margin: 15px 0;
+}
+
+#creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+    #avatar {
+        width: 30px;
+        height: auto;
+        outline: solid 1px var(--white);
+        border-radius: 50%;
+    }
+
+    #creator span {
+        color: var(--soft-blue);
+    }
+
+        #creator span strong {
+            font-weight: 200;
+            color: var(--white);
+            transition: 0.2s ease-in-out;
+        }
+
+        #creator span strong:hover {
+            color: var(--cyan);
+            cursor: pointer;
+        }

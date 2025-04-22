@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Work Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --white: hsl(0, 100%, 100%);
+    --purple100: hsl(275, 100%, 97%);
+    --purple600: hsl(292, 16%, 49%);
+    --purple950: hsl(292, 42%, 14%);
+  }
+
+  body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: var(--purple100);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 35vh;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  body section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 10px;
+    width: 600px;
+    z-index: 1;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .heading img {
+    width: 40px;
+    height: auto;
+  }
+
+  .heading h1 {
+    font-size: 50px;
+  }
+
+  .headlines {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+    background-color: var(--white);
+    margin-bottom: 15px;
+  }
+
+  .headlines h2  {
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .headlines h2:hover {
+    cursor: pointer;
+    color: rgb(150, 0, 231);
+  }
+
+  .plus-icon:hover {
+    cursor: pointer;
+  }
+
+  .minus-icon:hover {
+    cursor: pointer;
+  }
+
+  .minus-icon {
+    display: none;
+  }
+
+  .card p {
+    font-size: 15px;
+    color: var(--purple600);
+    line-height: 1.4em;
+    display: none;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1.5px;
+    background-color: hsl(30, 18%, 87%);
+    border: none;
+    border-radius: 25px;
+    margin: 15px 0;
+  }
+
+  @media (max-width: 600px){
+
+    body section {
+      padding: 0 15px;
+    }
+
+    .card {
+      width: 100%;
+    }
+  }

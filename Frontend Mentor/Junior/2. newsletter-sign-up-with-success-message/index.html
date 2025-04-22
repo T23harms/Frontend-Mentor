@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+    <main class="card">
+    <!-- Sign-up form start -->
+    <div id="sign-up-section">
+      <figure class="sign-up-picture">
+        <source srcset="assets/images/illustration-sign-up-mobile.svg" media="(min-width: 700px)">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign-up-picture">
+      </figure>
+
+      <section class="details">
+        <h1 class="update">Stay updated!</h1>
+
+        <p class="join">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="lsit">
+          <div class="product"> 
+            <img class="icon-list" src="assets/images/icon-list.svg" alt="icon-list">
+            <p class="list-txt">Product discovery and building what matters</p>
+          </div>
+          <div class="product">
+            <img class="icon-list" src="assets/images/icon-list.svg" alt="icon-list">
+            <p class="list-txt">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="product">
+            <img class="icon-list" src="assets/images/icon-list.svg" alt="icon-list">
+            <p class="list-txt">And much more!</p>
+          </div>
+        </div>        
+        
+        <form class="sign-up">
+          <label class="email">Email address</label>
+          <p class="error-message" style="color: red; font-size: 12px; display: none;">Valid email required!</p>
+          <input class="email-box" id="email" name="email" type="email" placeholder="email@company.com" />
+          <button class="subscription-btn" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+    </div>
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <div id="success-message" style="display: none;">
+        <div>
+          <img class="success-pic" src="assets/images/icon-success.svg" alt="icon-success">
+          <h1 class="thanks-txt">Thanks for subscribing!</h1>
+
+          <p class="confirmation-txt">A confirmation email has been sent to <strong id="email-confirmation"></strong>. 
+          Please open it and click the button inside to confirm your subscription.</p> 
+        </div>
+        <button class="dismiss-btn" onclick="dismissMessage()">
+          <p class="dismiss">Dismiss message</p>
+        </button>
+      </div>
+      <!-- Success message end -->
+    
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
